@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Preisrechner.PreisrechnerGUI">
-  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="380" height="407"/>
+      <xy x="20" y="20" width="465" height="407"/>
     </constraints>
     <properties>
       <background color="-16723969"/>
@@ -17,26 +17,26 @@
       <component id="ccc85" class="javax.swing.JLabel" binding="preisAnfangFeld">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="65" height="14"/>
+            <preferred-size width="89" height="14"/>
           </grid>
         </constraints>
         <properties>
-          <text value="Einzelpreis"/>
+          <text value="Zahl 1"/>
         </properties>
       </component>
       <component id="d6b0" class="javax.swing.JLabel" binding="anzahlFeld">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="65" height="14"/>
+            <preferred-size width="89" height="14"/>
           </grid>
         </constraints>
         <properties>
-          <text value="Anzahl"/>
+          <text value="Zahl 2"/>
         </properties>
       </component>
       <component id="82619" class="javax.swing.JTextField" binding="preisAnfangText">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -44,7 +44,7 @@
       </component>
       <component id="e413d" class="javax.swing.JTextField" binding="anzahlText">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -53,24 +53,16 @@
       <component id="ec8e3" class="javax.swing.JLabel" binding="gesamtFeld">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="65" height="14"/>
+            <preferred-size width="89" height="14"/>
           </grid>
         </constraints>
         <properties>
-          <text value="Gesamtpreis"/>
-        </properties>
-      </component>
-      <component id="fb1dd" class="javax.swing.JButton" binding="ausführenButton">
-        <constraints>
-          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Berechnen"/>
+          <text value="Ergebnis"/>
         </properties>
       </component>
       <component id="7ffdb" class="javax.swing.JTextField" binding="gesamtText">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -82,13 +74,56 @@
       </component>
       <component id="73329" class="javax.swing.JLabel" binding="PreisrechnerLabel">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="65" height="14"/>
           </grid>
         </constraints>
         <properties>
           <font name="Rubik" size="20" style="1"/>
-          <text value="Taschenrechner v1"/>
+          <text value="Taschenrechner V1"/>
+        </properties>
+      </component>
+      <component id="b1499" class="javax.swing.JButton" binding="minusButton">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="-"/>
+        </properties>
+      </component>
+      <component id="27a66" class="javax.swing.JButton" binding="malButton">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="*"/>
+        </properties>
+      </component>
+      <component id="14687" class="javax.swing.JButton" binding="geteiltButton">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="/"/>
+        </properties>
+      </component>
+      <component id="fb1dd" class="javax.swing.JButton" binding="plusButton">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <inheritsPopupMenu value="false"/>
+          <opaque value="true"/>
+          <text value="+"/>
+        </properties>
+      </component>
+      <component id="a61b9" class="javax.swing.JCheckBox" binding="checkBox1" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
         </properties>
       </component>
     </children>
